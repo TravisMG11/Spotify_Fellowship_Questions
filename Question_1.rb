@@ -3,6 +3,8 @@ def sort_by_string(s, t)
   s_arr = s.chars
   t_arr = t.chars
   sorted_str = ""
+  # instructions unclear, so any letters found in 's' but not in 't'
+  #will be added to end in order of appearance
   misc_lttrs = ""
 
   s_arr.each do |lttr|
@@ -22,5 +24,7 @@ def sort_by_string(s, t)
 
 end
 
-p sort_by_string("program", "grapo")
-# p sort_by_string()
+p sort_by_string("program", "grapo") #grrapom
+p sort_by_string("weather", "therapyw") #theeraw
+p sort_by_string("good", "odg") #oodg
+p sort_by_string("abcde", "cdef") #cde

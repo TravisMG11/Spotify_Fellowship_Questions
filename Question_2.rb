@@ -49,6 +49,14 @@ def where_does_it_end?(str, i)
 end
 
 
-p decode_string("4[ab]")
+p decode_string("4[ab]") #abababab
 
-p decode_string("2[b3[a]]")
+p decode_string("2[b3[a]]") #baaabaaa
+
+#no examples tested for double digit multipleiers
+p decode_string("10[ab]") #abababababababababab
+
+p decode_string("2[b3[a]]")  #
+p decode_string("3[a]2[bc]") #aaabcbc
+p decode_string("3[a2[c]]") #accaccacc
+p decode_string("2[abc]3[cd]ef") #abcabccdcdcdef
